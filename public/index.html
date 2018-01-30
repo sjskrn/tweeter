@@ -15,11 +15,15 @@
 
     <link rel="stylesheet" href="/styles/nav.css">
 
+    <link rel="stylesheet" href="/styles/new-tweet.css">
+
     <!-- External JS -->
     <script type="text/javascript" src="/vendor/jquery-2.2.3.min.js"></script>
 
     <!-- App JS -->
     <script type="text/javascript" src="/scripts/app.js"></script>
+
+    <script type="text/javascript" src="/scripts/compose-char-counter.js"></script>
   </head>
 
   <body>
@@ -32,15 +36,14 @@
 
     <!-- Page-specific (main) content here -->
     <main class="container">
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque nibh massa, sodales eu sem sit amet, mattis mattis libero. Ut bibendum ornare erat, sed rutrum velit malesuada id. Phasellus tincidunt suscipit turpis feugiat dictum. Suspendisse dolor nisl, semper eu dui ac, lobortis pretium ligula. Nunc ultricies nibh nisi, in dignissim odio ullamcorper sit amet. Sed risus ipsum, commodo in nibh in, fringilla sollicitudin purus. Nulla ut metus consequat, ultricies mi et, consectetur massa. Maecenas volutpat neque eget tellus viverra, non volutpat quam cursus. Vestibulum erat massa, venenatis at mollis euismod, porta vitae risus. Nunc ultricies erat urna, accumsan porttitor dolor mollis eget. Sed pellentesque condimentum turpis id faucibus. Pellentesque convallis, arcu eu blandit iaculis, odio ante volutpat ipsum, sit amet rutrum elit nibh eget risus. Donec congue nulla justo.
-
-Suspendisse sem erat, blandit at iaculis quis, dapibus sit amet nisl. Fusce a dui quis eros fermentum aliquam. Pellentesque at nunc non arcu finibus porta eu non tellus. Sed ac metus posuere, aliquam augue vel, elementum elit. Curabitur dolor dolor, eleifend sed sagittis ac, ullamcorper eget nisi. Phasellus gravida tristique metus, a scelerisque mauris iaculis ut. Quisque mauris enim, facilisis a arcu vel, blandit eleifend nisl. Vestibulum at neque purus.
-
-Mauris ac justo ut risus malesuada varius. Proin aliquam ex et tristique ornare. Aliquam scelerisque lectus mi, id faucibus lacus tincidunt quis. Aliquam urna nisl, efficitur sit amet erat in, congue lobortis turpis. Vivamus sapien augue, iaculis eget fringilla ac, rutrum at libero. Praesent maximus erat justo, in finibus nisl congue ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc accumsan ipsum vel ligula mattis blandit. In ac eros viverra, pharetra lacus nec, molestie leo. Morbi euismod viverra est, eu volutpat metus tincidunt at. Suspendisse ut eros sem. Aliquam condimentum iaculis imperdiet. Maecenas eget ligula dictum nulla pharetra finibus eu id felis.
-
-Nulla sed ullamcorper ante. Ut sit amet nunc purus. Integer lobortis ullamcorper tortor, et pretium tellus ullamcorper blandit. Fusce quis dui iaculis, ultricies mauris tristique, lobortis est. Mauris feugiat porta arcu, quis placerat massa molestie non. Proin nec elementum dolor. Nam nunc urna, ultrices ultrices cursus nec, finibus vel orci. Curabitur non lacinia nisi. Etiam tincidunt mi lacus, id gravida metus auctor quis. Donec molestie gravida justo. Sed ut scelerisque eros, id scelerisque nulla. Nunc imperdiet pharetra consequat. Integer blandit tempor quam vel vulputate.
-
-Cras blandit posuere ligula. Etiam semper felis sem, non porttitor ante mattis vel. Etiam dapibus est ut leo finibus, vitae elementum lectus interdum. Suspendisse iaculis finibus ante. Mauris lectus turpis, efficitur nec metus vel, pharetra sagittis sem. Donec sit amet varius urna. Mauris aliquet lectus id dui egestas fermentum. Mauris sit amet hendrerit sapien. Nullam ac nunc sed velit tincidunt congue at id orci. Curabitur id lorem ut leo fringilla molestie ac id sem. Curabitur efficitur porta felis ac placerat. Morbi fermentum, sem vitae maximus ultricies, tortor magna placerat ligula, non iaculis turpis odio non felis. Proin interdum nisl molestie nulla scelerisque pulvinar sed et diam. Nunc faucibus lacus dui, blandit porta turpis porttitor ut.</p>
+      <section class="new-tweet">
+        <h2>Compose Tweet</h2>
+          <form action="/tweets/" method="post">
+            <textarea name="text" placeholder="What are you humming about?"></textarea>
+            <input type="submit" value="Tweet">
+            <span class="counter">140</span>
+          </form>
+      </section>
     </main>
 
   </body>
