@@ -6,6 +6,7 @@
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -22,12 +23,95 @@ body {
 }
 
 main {
-	padding-top: 140px;
-	width: 450px;
-	margin: 0 auto;
-	background-color: #FFFFFF;
+  padding-top: 10px;
+  width: 450px;
+  margin: 100px auto 0 auto;
+  background-color: white;
 }
 
-/*
- * Additional CSS can be defined below or in other CSS files, as per instructions
- */
+article {
+  margin: 1em;
+  border: 2px solid #eee;
+  border-radius: 10px;
+  opacity: 0.8;
+}
+
+article:hover {
+  opacity: 1;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin:1em;
+}
+
+article header {
+  background-color: #eee;
+  height: 100px;
+  border-radius: 10px;
+}
+
+header .img {
+  width: 80px;
+  height: 80px;
+  float: left;
+  border-radius: 10px;
+  margin:10px;
+  background:white;
+}
+
+header .username {
+  font-size: 28px;
+  float: left;
+  padding-left: 5px;
+  line-height: 0px;
+  font-weight: 700;
+}
+
+header .userfields {
+  float: right;
+  line-height: 100px;
+  padding-right: 10px;
+
+}
+
+.content {
+  height: 100px;
+  line-height: 30px;
+  padding-left: 15px;
+}
+footer {
+  border-top: 2px solid #eee;
+  padding-left: 10px;
+}
+
+.fa {
+  display:none;
+}
+
+article:hover footer p i {
+  display: inline-block;
+  float: right;
+  font-size: 20px;
+  background: #eee; 
+  color:  #ffe4e1
+  line-height: 10px;
+  padding: 4px;
+  margin-right: 4px;
+}
+
+.compose {
+  float: right;
+  width: 130px;
+  height: 60px;
+  border-radius: 10px;
+  background: white;
+  line-height: 100p;
+  margin-top: 10px;
+  border: 1px solid black;
+  opacity: 0.7;
+}
+
+.compose:hover {
+  opacity: 1;
+  border: 2px solid black;
+  cursor: pointer;
+}
